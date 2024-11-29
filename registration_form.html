@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Forms</title>
+</head>
+<body>
+  <h1>Part 2: Registration Form</h1>
+  <p>To be a beneficiary please register in the form below</p>
+  <div>
+    <form action="submit" method="post">
+          <label for="fname">Name: </label>
+          <input type="text" id="fname" name="full_name" required placeholder="Enter your Full Name">
+          <br>
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required placeholder="example23@gmail.com">
+          <br>
+          <label for="password">Password: </label>
+          <input type="password" id="password" name="password" 
+            required placeholder="password" minlength="8" maxlength="18" pattern="[A-Za-z\d]" 
+            title="password should contain A-Z, a-z and a digit and the min length is 8 and max length is 18">
+          <br>
+          <label for="age">Age: </label>
+          <input type="number" id="age" name="age" required placeholder="age" min="14" max="115" >
+          <br>
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other">
+          <label for="other">Other</label>
+          <br>
+          <input type="checkbox" id="check">
+          <label for="check">Terms and Conditions</label>
+          <br>
+          <input type="submit">
+    </form>
+  </div>
+</body>
+</html>
